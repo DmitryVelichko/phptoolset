@@ -11,7 +11,7 @@ WORKDIR /tmp
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 #Installing phpcs
-RUN pear install PHP_CodeSniffer
+RUN pear install PHP_CodeSniffer-2.9.0
 
 #installing wpcs for phpcs
 RUN cd /tmp && \
